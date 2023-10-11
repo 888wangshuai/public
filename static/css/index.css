@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  /* 防点击闪动 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 去除列表默认样式 */
+ul,
+ol {
+  list-style: none;
+}
+/* 去除默认的倾斜效果 */
+em,
+i {
+  font-style: normal;
+}
+/* 去除a标签默认下划线，并设置默认文字颜色 */
+a {
+  text-decoration: none;
+}
+/* 设置img的垂直对齐方式为居中对齐，去除img默认下间隙 */
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+/* 去除input默认样式 */
+input {
+  border: none;
+  outline: none;
+}
+/* 双伪元素清除法 */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+/* 多行显示省略号 */
+.ellipsis-2 {
+  overflow: hidden;
+  /* 超出显示... */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* 设置显示几行 */
+  -webkit-line-clamp: 2;
+  /* 主轴垂直 */
+  -webkit-box-orient: vertical;
+}
+/* 单行显示省略号*/
+.ellipsis-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*表格合并*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 左浮动 */
+.fl {
+  float: left;
+}
+/* 右浮动 */
+.fr {
+  float: right;
+}
+.center {
+  width: 1190px;
+  margin: auto;
+}
+.top {
+  height: 30px;
+  line-height: 30px;
+  background-color: #999;
+}
+.top .center {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.top .center a,
+.top .center b {
+  color: #666;
+  font-size: 14px;
+  font-weight: normal;
+}
+.top .center .left {
+  height: 30px;
+  width: 150px;
+}
+.top .center .right {
+  height: 30px;
+  width: 730px;
+  display: flex;
+  justify-content: space-between;
+}
+.top .center .right li {
+  font-size: 14px;
+  color: #666;
+}
+.top .center .right .active {
+  color: red;
+}
+.serch {
+  height: 120px;
+  background-color: #fff;
+}
+.serch .center {
+  display: flex;
+  justify-content: space-between;
+}
+.serch .center .img img {
+  height: 120px;
+}
+.serch .center .chazhao {
+  margin-top: 50px;
+}
+.serch .center .chazhao input {
+  width: 425px;
+  height: 28px;
+  text-indent: 3px;
+  border: 2px solid red;
+}
+.serch .center .chazhao .box {
+  width: 425px;
+  background-color: #fff;
+  display: none;
+}
+.serch .center .chazhao .box p {
+  height: 30px;
+  line-height: 30px;
+  text-indent: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.serch .center .chazhao .box p:hover {
+  background-color: gray;
+}
+.serch .center .chazhao button {
+  width: 58px;
+  height: 28px;
+  color: white;
+  border: 0;
+  background-color: red;
+}
+.serch .center .goods {
+  border: 1px solid transparent;
+  line-height: 140px;
+}
+.serch .center .goods a {
+  color: #f4f4f4;
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  line-height: 40px;
+  border-radius: 10%;
+  display: inline-block;
+  background-color: orange;
+}
+.serch .center .erweima {
+  padding-top: 40px;
+  padding-left: 0;
+}
+.serch .center .erweima img {
+  width: 60px;
+  height: 60px;
+}
+.banner {
+  background-color: salmon;
+  height: 480px;
+}
+.ms {
+  background-color: aquamarine;
+  height: 260px;
+}
+.gc {
+  height: 570px;
+  background-color: darkorange;
+}
+.shop {
+  margin-top: 20px;
+  background-color: #f4f4f4;
+}
+.shop .shop_tanb {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.shop .shop_tanb li {
+  width: 198px;
+  padding-top: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+.shop .shop_tanb li span,
+.shop .shop_tanb li b {
+  display: block;
+  height: 30px;
+}
+.shop .shop_tanb li > span:first-child {
+  width: 70px;
+  line-height: 30px;
+  border-radius: 30px;
+  background-color: red;
+  margin: auto;
+}
+.shop .shop_tanb li > span:nth-child(2) {
+  color: #999;
+  font-size: 14px;
+}
+.shop .shop_tanb i {
+  font-size: 30px;
+  line-height: 60px;
+  color: #dbd9d9;
+  font-style: normal;
+}
+.shop .shop_tanb #red {
+  color: red;
+}
+.shop .goods1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.shop .goods1 li {
+  width: 230px;
+  height: 322px;
+  background-color: #fff;
+  padding: 40px;
+  margin-bottom: 10px;
+}
+.shop .goods1 li img {
+  width: 100%;
+  height: 150px;
+}
+.shop .goods1 li p {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.shop .goods1 li p span {
+  background-color: red;
+  color: #fff;
+  font-size: 12px;
+  padding: 0 5px;
+}
+.shop .goods1 li p button {
+  background-color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.shop .goods1 li a {
+  color: #666;
+}
+.shop .goods1 li i {
+  color: red;
+  font-size: 16px;
+}

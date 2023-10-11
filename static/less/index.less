@@ -1,0 +1,212 @@
+@import './reset.less';
+.center{
+    width: 1190px;
+    margin: auto;
+}
+// 顶部导航
+.top{
+    height: 30px;
+    line-height: 30px;
+    background-color: #999;
+    .center{
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        a,b{
+            color: #666;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .left{
+            height: 30px;
+            width: 150px;
+        }
+        .right{
+            height: 30px;
+            width: 730px;
+           display: flex;
+           justify-content: space-between;
+           li{
+            font-size: 14px;
+            color: #666;
+           }
+           .active{
+            color: red;
+        }
+        }
+    }
+}
+// 顶部导航
+
+// 搜索区域
+ .serch{
+    // width: 140px;
+    height: 120px;
+    background-color: #fff;
+    .center{
+        display: flex;
+        justify-content: space-between;
+        .img{
+            img{
+                height: 120px;
+            }
+        }
+        .chazhao{
+            margin-top: 50px;
+            input{
+                width: 425px;
+                height: 28px;
+                text-indent: 3px;
+                border: 2px solid red;
+            }
+            .box{
+                width: 425px;
+                background-color: #fff;
+                display: none;
+                p{
+                    height: 30px;
+                    line-height: 30px;
+                    text-indent: 3px;
+                    font-size: 14px;
+                    cursor: pointer;
+                   &:hover{
+                    background-color: gray;
+                   }
+                }
+            }
+            button{
+                width: 58px;
+                height: 28px;
+                color: white;
+                border: 0;
+                background-color: red;
+            }
+        }
+        .goods{
+            border: 1px solid transparent;
+            line-height: 140px;
+            a{
+                color: #f4f4f4;
+                text-align: center;
+                height: 40px;
+                width: 100px;
+                line-height: 40px;
+                border-radius: 10%;
+                display: inline-block;
+                background-color: orange;
+            }
+        }
+        .erweima{
+            padding-top: 40px;
+            padding-left: 0;
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+    
+ }
+// 搜索区域 
+
+// 轮播图区域
+.banner{
+    background-color: salmon;
+    height: 480px;
+}
+// 轮播图区域
+// 秒杀区域
+.ms{
+    background-color: aquamarine;
+    height: 260px;
+}
+// 秒杀区域
+// 频道广场
+.gc{
+    height: 570px;
+    background-color: darkorange;
+}
+// 频道广场
+// 精品推荐
+.shop{
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    .shop_tanb{
+        height: 60px;
+        // background-color: palevioletred;
+        display: flex;
+       
+        justify-content: space-between;
+        li{
+            width: 198px;
+            padding-top: 4px;
+            cursor: pointer;
+            text-align: center;
+            // background-color: slateblue;
+            span,b{
+                display: block;
+                height: 30px;
+            }
+            &>span:first-child{
+                width: 70px;
+                line-height: 30px;
+                border-radius: 30px;
+                background-color: red;
+                margin: auto;
+            }
+            &>span:nth-child(2){
+                color: #999;
+                font-size: 14px;
+            }
+        }
+        i{
+            font-size: 30px;
+            line-height: 60px;
+            color:#dbd9d9;
+            font-style: normal;
+        }
+        #red{
+            color: red;
+        }    
+    }
+    .goods1{
+       
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li{
+            width: 230px;
+            height: 322px;
+            background-color: #fff;
+            padding: 40px;
+            margin-bottom: 10px;
+            img{
+                width: 100%;
+                height: 150px;
+            }
+            p{
+                margin-top: 30px;
+                font-size: 14px;
+                span{
+                    background-color: red;
+                    color: #fff;
+                    font-size: 12px;
+                    padding: 0 5px;
+                }
+                button{
+                    background-color: #fff;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+            a{
+                color: #666;
+            }
+            i{
+                color: red;
+                font-size: 16px;
+            }
+        }
+    }
+}
+// 精品推荐

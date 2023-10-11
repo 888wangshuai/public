@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.box {
+  width: 760px;
+  margin: 20px auto;
+  /* background-color: pink; */
+}
+.head ul,
+.content ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #000;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.content ul {
+  margin-bottom: 20px;
+}
+.content ul img {
+  width: 130px;
+  height: 100px;
+}
+.content ul input {
+  width: 20px;
+  text-align: center;
+  padding: 2px;
+}
+.content ul button {
+  padding: 2px 5px;
+}
+.content-floor {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #000;
+}
+.floor {
+  margin: 20px 0;
+}
+.floor ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+}
+.floor ul li {
+  width: 180px;
+  border: 1px dashed #666;
+  text-align: center;
+  margin: 5px;
+}
+.floor ul li img {
+  width: 160px;
+  height: 120px;
+}
+.top {
+  height: 30px;
+  line-height: 30px;
+  background-color: #999;
+}
+.top .center {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.top .center a,
+.top .center b {
+  color: #666;
+  font-size: 14px;
+  font-weight: normal;
+}
+.top .center .left {
+  height: 30px;
+  width: 150px;
+}
+.top .center .right {
+  height: 30px;
+  width: 730px;
+  display: flex;
+  justify-content: space-between;
+}
+.top .center .right li {
+  font-size: 14px;
+  color: #666;
+}
+.top .center .right .active {
+  color: red;
+}
+.center {
+  width: 1190px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
